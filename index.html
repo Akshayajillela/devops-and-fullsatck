@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        input, select {
+            padding: 8px;
+            width: 60%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #16a085;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Student Profile Page</h1>
+    <p>HTML + CSS + JavaScript (Medium Level)</p>
+</header>
+
+<div class="container">
+
+    <h2>About Student</h2>
+    <p>Hello! This page displays student details using HTML.</p>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+
+    <h2>Academic Details</h2>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Course</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>1st Year</td>
+            <td>B.Tech</td>
+            <td>75%</td>
+        </tr>
+        <tr>
+            <td>2nd Year</td>
+            <td>B.Tech</td>
+            <td>78%</td>
+        </tr>
+    </table>
+
+    <h2>Contact Form</h2>
+    <form onsubmit="showAlert(); return false;">
+        Name:<br>
+        <input type="text" required><br><br>
+
+        Email:<br>
+        <input type="email" required><br><br>
+
+        Course:<br>
+        <select>
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>MCA</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+
+<footer>
+    <p>© 2026 Student Profile Page</p>
+</footer>
+
+<script>
+    function showAlert() {
+        alert("Form submitted successfully!");
+    }
+</script>
+
+</body>
+</html>
